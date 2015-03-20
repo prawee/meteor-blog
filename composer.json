@@ -1,3 +1,12 @@
 {
-
+	"name":"prawee/meteor-blog",
+	"description":"Learning Meteor JavaScript Framework by Make Blog",
+	"keywords":["meteor","javascript","framework","blog"],
+	"homepage":"http://www.prawee.com",
+	"license":"MIT",
+	"minimum-stability":"dev",
+	"authors":[
+		"name":"prawee wongsa",
+		"email":"konkeanweb@gmail.com"
+	]
 }
