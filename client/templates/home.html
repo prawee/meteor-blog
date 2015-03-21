@@ -10,5 +10,17 @@
 
 {{>contextExample someText="ทดสอบส่งข้อมูลผ่าน context."}}
 
+<hr/>
 {{> contextExample dataContextHelper}}
+
+<hr/>
+{{#with dataContextHelper}}
+    {{>contextExample}}
+{{/with}}
+
+<hr/>
+{{#with dataContextHelper}}
+    <p>{{someText}}</p>
+    <p>{{someNested.text}}</p>
+{{/with}}
 </template>
