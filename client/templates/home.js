@@ -11,11 +11,19 @@ Template.home.destroyed=function(){
 }
 
 Template.home.helpers({
-	/*exampleHelper:function(){
-		return 'This text came from a helper with some <strong>HTML</strong>.';
-	}*/
-
+	exampleHelper:function(){
+		return 'นี่คือข้อความจาก helper ด้วยการแสดงผลคำสั่ง <strong>HTML</strong>.';
+	},
 	podHelper:function(){
-		return new Spacebars.SafeString('This text came from a helper with some <strong>HTML</strong>.');
-	}
+		return new Spacebars.SafeString('<hr/>อันนี้ก็เป็นอีกตัวอย่างหนึ่งที่ใช้ helper ร่วมกับ Spacebars.SafeString');
+	},
+
+    dataContextHelper:function(){
+        return {
+            someText:'ทดสอบการใช้งาน helper จาก template หลัก.',
+            someNested:{
+                text:'อันนี้มาจากไฟล์ => "someNested.text"'
+            }
+        }
+    }
 });
