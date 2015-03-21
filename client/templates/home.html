@@ -1,11 +1,14 @@
 <template name="home">
 {{#markdown}}
-## Welcome to my blog
-Here I'm talking about my latest discoveries from the world of Javascript.
+## ยินดีต้อนรับเข้าสู่บล๊อค
+ที่นี่จะพูดเกี่ยวกับการศึกษาและทดสอบ Javascript Framework ใหม่ ๆ ที่เกิดขึ้นบนโลกใบนี้นะฮ๊าฟ.
 {{/markdown}}
 
 {{{exampleHelper}}}
+
 {{podHelper}}
 
-{{>contextExample someText="ทดสอบ context."}}
+{{>contextExample someText="ทดสอบส่งข้อมูลผ่าน context."}}
+
+{{> contextExample dataContextHelper}}
 </template>
