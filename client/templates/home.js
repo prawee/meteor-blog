@@ -1,6 +1,6 @@
 Template.home.created=function(){
 	console.log('Created the home template');
-    this.$('p').html('We just replaced that text!');
+    //this.$('p').html('We just replaced that text!');
 }
 
 Template.home.rendered=function(){
