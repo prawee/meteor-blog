@@ -5,6 +5,8 @@ Template.contextExample.rendered=function(){
 Template.contextExample.helpers({
     logContext:function(){
         console.log('Context Log Helper',this);
+
+        return Session.get('randomNumber');
     }
 });
 
