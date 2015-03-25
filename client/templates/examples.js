@@ -7,3 +7,9 @@ Template.contextExample.helpers({
         console.log('Context Log Helper',this);
     }
 });
+
+Template.contextExample.events({
+    'click button':function(e,template){
+        Session.set('randomNumber',Math.random(0,99));
+    }
+});
