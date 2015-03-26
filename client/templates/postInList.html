@@ -3,7 +3,8 @@
         <h2><a href="#">{{title}}</a></h2>
         <p>{{description}}</p>
         <div class="footer">
-            Posted by {{author}}
+            <!--Posted by {{author}}-->
+            <time datetime="{{formatTime timeCreated "iso"}}"> Posted {{formatTime timeCreated "fromNow"}} by {{author}}</time>
         </div>
     </div>
 </template>
