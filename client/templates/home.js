@@ -33,13 +33,13 @@ Template.home.helpers({
                 title:'My Second entry',
                 decscription: 'รายละเอียดบทความที่สอง',
                 author:'prawee wongsa',
-                timeCreated: moment().subtract(3,'days').unix()
+                timeCreated: moment().subtract(3,'days').unix(),
             },
             {
                 title:'My First entry',
                 decscription: 'รายละเอียดบทความที่หนึ่ง',
                 author:'thanakorn wongsa',
-                timeCreated: moment().subtract(3,'days').unix()
+                timeCreated: moment().subtract(7,'days').unix()
             }
         ];
     }
