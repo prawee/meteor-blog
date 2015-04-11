@@ -13,10 +13,10 @@ Template.home.destroyed=function(){
 
 Template.home.helpers({
 	exampleHelper:function(){
-		return 'นี่คือข้อความจาก helper ด้วยการแสดงผลคำสั่ง <strong>HTML</strong>.';
+		return 'นี่คือข้อความจาก helper ด้วยการแสดงผลคำสั่ง <strong>HTML</strong>(exampleHelper).';
 	},
 	podHelper:function(){
-		return new Spacebars.SafeString('<hr/>อันนี้ก็เป็นอีกตัวอย่างหนึ่งที่ใช้ helper ร่วมกับ Spacebars.SafeString');
+		return new Spacebars.SafeString('<hr/>อันนี้ก็เป็นอีกตัวอย่างหนึ่งที่ใช้ helper ร่วมกับ Spacebars.SafeString (podHelper)');
 	},
 
     dataContextHelper:function(){
