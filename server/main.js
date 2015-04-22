@@ -43,9 +43,9 @@ Meteor.startup(function(){
                 text:'Lorem ipsum dolor site amet...',
                 timeCreated:moment().subtract(1,'days').unix(),
                 author:'John Doe'
-            },
+            }
         ];
-        _.each(dummyPosts,Function(post){
+        _.each(dummyPosts,function(post){
             Posts.insert(post);
         });
     }
