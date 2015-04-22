@@ -28,7 +28,7 @@ Template.home.helpers({
         }
     },
     postsList:function(){
-        return [
+        /*return [
             {
                 title:'My Second entry',
                 decscription: 'รายละเอียดบทความที่สอง',
@@ -41,6 +41,7 @@ Template.home.helpers({
                 author:'thanakorn wongsa',
                 timeCreated: moment().subtract(7,'days').unix()
             }
-        ];
+        ];*/
+        return Posts.find({},{sort:{timeCreated:-1}});
     }
 });
